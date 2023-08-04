@@ -17,11 +17,11 @@ const Home = () => {
             o seu futuro global agora!
           </Title>
           <TextContent>
-            Domine as tecnologias utiliadas pelas empresas mais inovadoras do
+            Domine as tecnologias utilizadas pelas empresas mais inovadoras do
             mundo e encare seu novo desafio profissional, evoluindo em
             comunidade com os melhores experts.
           </TextContent>
-          <Button title="Comecar" variant="secondary" onClick={() => null} />
+          <Button title="Começar" variant="secondary" onClick={() => null} />
         </div>
         <div>
           <img src={banner} alt="banner" />
@@ -31,4 +31,4 @@ const Home = () => {
   );
 };
 
-export { Home };
+export default Home;
