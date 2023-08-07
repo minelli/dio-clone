@@ -34,7 +34,7 @@ export const UserInfo = styled.div`
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #ffffff;
+    color: white;
   }
 
   p {
@@ -43,7 +43,7 @@ export const UserInfo = styled.div`
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #ffffff;
+    color: white;
   }
 `;
 
@@ -51,7 +51,7 @@ export const UserPicture = styled.img`
   width: 32px;
   height: 32px;
   border-radius: 22px;
-  border: 3px solid #ffffff;
+  border: 3px solid white;
 `;
 
 export const PostInfo = styled.div`
@@ -63,7 +63,7 @@ export const PostInfo = styled.div`
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #ffffff;
+    color: white;
   }
 
   p {

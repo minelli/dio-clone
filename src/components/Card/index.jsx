@@ -25,7 +25,7 @@ function Card() {
         <PostInfo>
           <h4>Projeto para curso de HTML e CSS</h4>
           <p>
-            Projeto feito o curso de html e css no bootcamp Dio do Global
+            Projeto feito no curso de html e css no bootcamp Dio do Global
             Avanade... <strong>Saiba Mais</strong>
           </p>
         </PostInfo>
