@@ -11,7 +11,6 @@ import {
 } from "./styles";
 import Button from "../Button";
 import logo from "../../assets/logo-dio.png";
-import UserInfo from "../UserInfo";
 
 function Header({ autenticado }) {
   return (
