@@ -11,8 +11,22 @@ import {
 } from "./styles";
 import Button from "../Button";
 import logo from "../../assets/logo-dio.png";
+import { useNavigate } from "react-router-dom";
 
 function Header({ autenticado }) {
+  const navigate = useNavigate();
+  const HandleClickHome = () => {
+    navigate("/");
+  };
+
+  const HandleClickRegister = () => {
+    navigate("/register");
+  };
+
+  const HandleClickLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <Wrapper>
       <Container>
@@ -35,9 +49,11 @@ function Header({ autenticado }) {
             />
           ) : (
             <>
-              <MenuRight href="#">Home</MenuRight>
-              <Button title="Entrar"></Button>
-              <Button title="Cadastrar"></Button>
+              <MenuRight onClick={HandleClickHome} href="#">
+                Home
+              </MenuRight>
+              <Button onClick={HandleClickLogin} title="Entrar"></Button>
+              <Button onClick={HandleClickRegister} title="Cadastrar"></Button>
             </>
           )}
         </Row>

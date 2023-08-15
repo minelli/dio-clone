@@ -35,7 +35,7 @@ const Login = () => {
   const {
     control,
     handleSubmit,
-    formState: { errors, isValid },
+    formState: { errors },
   } = useForm({ resolver: yupResolver(schema), mode: "onChange" });
 
   const onSubmit = async (formData) => {
@@ -48,7 +48,6 @@ const Login = () => {
       } else {
         alert("Nenhum usuario encontrado");
       }
-      console.log("retorno api: ", data);
     } catch (error) {
       alert(`Erro: ${error}`);
     }
