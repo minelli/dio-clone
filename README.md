@@ -6,6 +6,10 @@ Projeto de aprendizado React, recriando a plataforma Dio.me
 
 In the project directory, you can run:
 
+### `npm run api`
+
+Runs an api that simulates a database using data included on db.json.\
+
 ### `npm start`
 
 Runs the app in the development mode.\
