@@ -12,8 +12,9 @@ import {
 import Button from "../Button";
 import logo from "../../assets/logo-dio.png";
 import { useNavigate } from "react-router-dom";
+import { IHeader } from "./types";
 
-function Header({ autenticado }) {
+function Header({ autenticado }: IHeader) {
   const navigate = useNavigate();
   const HandleClickHome = () => {
     navigate("/");

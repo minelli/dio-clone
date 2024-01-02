@@ -1,8 +1,9 @@
 import React from "react";
 import { ErrorText, IconContainer, InputContainer, InputText } from "./styles";
 import { Controller } from "react-hook-form";
+import { IInput } from "./types";
 
-function Input({ leftIcon, name, control, errorMessage, ...rest }) {
+function Input({ leftIcon, name, control, errorMessage, ...rest }: IInput) {
   return (
     <>
       <InputContainer>
