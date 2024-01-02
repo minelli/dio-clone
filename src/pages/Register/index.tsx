@@ -19,6 +19,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { api } from "../../services/api";
+import { IRegisterFormData } from "./types";
 
 const schema = yup
   .object({
@@ -38,9 +39,9 @@ const Register = () => {
     control,
     handleSubmit,
     formState: { errors },
-  } = useForm({ resolver: yupResolver(schema), mode: "onChange" });
+  } = useForm<IRegisterFormData>({ resolver: yupResolver(schema), mode: "onChange" });
 
-  const onSubmit = async (formData) => {
+  const onSubmit = async (formData: IRegisterFormData) => {
     try {
       const { data } = await api.get(`users?email=${formData.email}`);
       if (data.length > 0) {
